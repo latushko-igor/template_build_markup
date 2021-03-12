@@ -1,0 +1,76 @@
+// ==========================================================================
+// STYLE GUIDE
+// ==========================================================================
+
+// Palette
+// ==========================================================================
+
+$color_primary--lightest:		#028aff;
+$color_primary--lighten:		#0275d9;
+$color_primary--light:			#0261b3;
+$color_primary:					#024c8c;
+$color_primary--dark:			#013766;
+$color_primary--darken:			#012340;
+$color_primary--darkest:		#000e1a;
+
+$color_secondary--light:		#738699;
+$color_secondary:				#343f4c;
+$color_secondary--darken:		#2b3440;
+
+$color_accent:					#FFEB3B;
+$color_accent--a50:				rgba($color_accent, .5);
+
+$color_darkest:					#000000;
+$color_brightest:				#ffffff;
+
+$color_gray--s90:				#DCDCDC;
+$color_gray--s80:				#BABABA;
+$color_gray--s20:				#585858;
+$color_gray--s10:				#333333;
+
+$color_highlight--success:		#5CB85C;
+$color_highlight--danger:		#D9534F;
+$color_highlight--warning:		#D8AE1C;
+
+// Typography
+// ==========================================================================
+
+$font_family--black:			'PFBeauSansPro-Black', Arial, sans-serif;
+$font_family--extrabold:		'PFBeauSansPro-ExtraBold', Arial, sans-serif;
+$font_family--bold:				'PFBeauSansPro-Bold', Arial, sans-serif;
+$font_family--semibold:			'PFBeauSansPro-SemiBold', Arial, sans-serif;
+$font_family--medium:			'PFBeauSansPro-Medium', Arial, sans-serif;
+$font_family--regular:			'PFBeauSansPro-Regular', Arial, sans-serif;
+$font_family--light:			'PFBeauSansPro-Light', Arial, sans-serif;
+
+$font_size--xs:					12px;
+$font_size--sm:					14px;
+$font_size--md:					16px;
+$font_size--lg:					18px;
+$font_size--xl:					20px;
+$font_size--xxl:				30px;
+
+$line_height--xs:				1.5;
+$line_height--sm:				1.7;
+$line_height--md:				1.9;
+$line_height--lg:				2.1;
+$line_height--xl:				2.3;
+$line_height--xxl:				2.5;
+
+// White Space
+// ==========================================================================
+
+$space--xs:						5px;
+$space--sm:						10px;
+$space--md:						15px;
+$space--lg:						20px;
+$space--xl:						30px;
+$space--xxl:					40px;
+
+// Breakpoints
+// ==========================================================================
+
+$screen--sm:					320px;
+$screen--md:					768px;
+$screen--lg:					1024px;
+$screen--xl:					1280px;

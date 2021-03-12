@@ -1,0 +1,13 @@
+# ignore
+
+# distribution folder
+dist/
+
+# lock-file
+yarn.lock
+
+# packages
+node_modules/
+
+# tinypng tmp folder
+.gulp/

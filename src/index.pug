@@ -1,0 +1,12 @@
+doctype html
+
+include ./_particles/_mixins
+include ./_particles/_vars
+
+html(lang=json.language)
+head
+	meta(charset='utf-8')
+	title= json.projectName + ' Pages'
+body
+	h1= json.projectName + ' Pages'
+	+index(json.index)

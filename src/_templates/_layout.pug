@@ -1,0 +1,26 @@
+doctype html
+
+include ../_particles/_mixins
+include ../_particles/_vars
+
+block page_vars
+
+html(lang=json.language)
+	head
+		include ../_particles/_head
+
+		block styles
+		block scripts
+
+	body(class='page--' + page.name)
+		//- include ../_components/_preloader
+
+		div(class='sticky-footer-wrapper')
+			include ../_particles/_header
+
+			div(class='sticky-footer-content')
+				block main
+
+			include ../_particles/_footer
+
+		block js

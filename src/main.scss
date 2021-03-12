@@ -1,0 +1,179 @@
+@charset "utf-8";
+
+@import './_particles/_vars';
+@import './_particles/_mixins';
+@import './_particles/_sprite';
+@import './_particles/_sprite@2x';
+// @import './_particles/_smartgrid';
+
+@import './_particles/_reset';
+@import './_particles/_base';
+@import './_particles/_fonts';
+
+/* ==========================================================================
+   UTILITIES
+   ========================================================================== */
+
+/* sticky footer
+   ========================================================================== */
+
+.sticky-footer-wrapper {
+	min-height: 100vh;
+	display: flex; flex-direction: column;
+}
+
+.sticky-footer-content {
+	flex: 1;
+}
+
+/* responsive youtube video (http://embedresponsively.com/)
+   ========================================================================== */
+
+.embed-container {
+	overflow: hidden;
+	position: relative;
+	padding-bottom: 56.25%; // 16:9
+	max-width: 100%; height: 0;
+}
+
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+	position: absolute; top: 0; left: 0;
+	width: 100%; height: 100%;
+}
+
+/* helpers
+   ========================================================================== */
+
+.cl {
+	overflow: auto;
+	zoom: 1; // ie7
+}
+
+/* sprites
+   ========================================================================== */
+
+.icon {
+	display: block;
+	width: inherit; height: inherit;
+	// fill: currentColor;
+}
+
+/* ==========================================================================
+   PAGES STYLES
+   ========================================================================== */
+
+/* common
+   ========================================================================== */
+
+body,
+input,
+textarea,
+button {
+	font: #{$font_size--md}/#{$line_height--md} $font_family--regular; color: $color_brightest;
+}
+
+body {
+	background: url('../img/bg/background.jpg') 50% 50% no-repeat;
+	background-size: cover;
+}
+
+a {
+	color: $color_primary;
+
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+h3 {
+	margin-bottom: $space--md; padding: $space--md;
+	color: $color_darkest;
+	text-align: center; text-transform: uppercase; text-shadow: 1px 1px rgba(0,0,0,.2);
+	background: linear-gradient(to right, #6a82fb, #fc5c7d);
+	border-radius: 3px;
+}
+
+/* extendable
+   ========================================================================== */
+
+.region {
+	padding: $space--md;
+	background-color: rgba(255,255,255,.5);
+}
+
+/* regions
+   ========================================================================== */
+
+.region-name {
+	margin-bottom: $space--md; padding: $space--md;
+	font-family: $font_family--medium; color: $color_secondary--light;
+	text-align: center; text-transform: uppercase; text-shadow: 1px 1px rgba(255,255,255,1);
+	background-color: rgba(255,255,255,.3); background-clip: padding-box;
+	border: 2px dashed rgba(255,255,255,.3);
+}
+
+.header {
+	@extend .region;
+	margin-bottom: $space--md;
+}
+
+.footer {
+	@extend .region;
+}
+
+.main {
+	@extend .region;
+	margin-bottom: $space--md;
+
+	&__wrapper {
+		display: flex; justify-content: center; flex-wrap: wrap;
+	}
+
+	&__box {
+		display: flex; flex-direction: column; align-items: center;
+		margin: 0 auto;
+
+		> *:not(h3):not(.sprite) {
+			margin-bottom: $space--md; padding: $space--md;
+			border: 1px solid rgba(255,255,255,.5); border-radius: 3px;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+}
+
+/* sprites
+   ========================================================================== */
+
+.icon {
+	width: 100px; height: 100px;
+}
+
+.sprite-yarn {
+	@include sprite($yarn);
+}
+
+.sprite-gulp {
+	@include sprite($gulp);
+}
+
+.sprite-pug {
+	@include sprite($pug);
+}
+
+.sprite-sass {
+	@include sprite($sass);
+}
+
+/* ==========================================================================
+   COMPONENTS
+   ========================================================================== */
+
+/* preloader
+   ========================================================================== */
+
+// @import './_components/_preloader';

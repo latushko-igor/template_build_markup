@@ -1,0 +1,35 @@
+//- pages links
+
+mixin index(data)
+	ul
+		each val, key in data
+			li
+				a(href=val)= key
+
+//- content images
+
+mixin img(fileName, width, height, className)
+	- width = width || 'auto'
+	- height = height || 'auto'
+	- className = className || ''
+	img(class=className, src='img/content/' + fileName, style='width: ' + width + '; height: ' + height + ';')
+
+//- icon
+
+mixin icon(fileName, mod)
+	- mod = mod || ''
+	svg(class='icon icon-' + fileName + ' ' + mod)
+		use(xlink:href='img/icons.svg#' + fileName)
+
+//- sprite
+
+mixin sprite(fileName, mod)
+	- mod = mod || ''
+	div(class='sprite sprite-' + fileName + ' ' + mod)
+
+//- mixin sprite(fileName, mod)
+//- 	if mod
+//- 		- mod = ' sprite-' + fileName + '--' + mod
+//- 	else
+//- 		- mod = ''
+//- 	div(class='sprite-' + fileName + mod)
