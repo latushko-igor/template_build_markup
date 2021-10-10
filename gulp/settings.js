@@ -1,8 +1,9 @@
 module.exports = {
 
+	projectType: 'job_markup',
 	projectName: 'projectName',
-	index: 'index.html',
 	deployRepo: 'https://github.com/latushko-igor/latushko-igor.github.io.git',
+	index: 'index.html',
 
 	vendor: [
 		'./node_modules/jquery/**/*',

@@ -2,9 +2,9 @@
     "name": "template_build_markup",
     "description": "Template of a markup projects build system",
     "version": "1.0.0",
-    "author": "latushko Igor <latushko.igor@gmail.com>",
+    "author": "Latushko Igor <latushko.igor@gmail.com>",
     "license": "MIT",
-    "repository": "https://github.com/latushko-igor/template_project_gulp.git",
+    "repository": "https://github.com/latushko-igor/template_build_markup.git",
     "main": "index.js",
     "devDependencies": {
         "browser-sync": "^2.26.14",
@@ -39,6 +39,14 @@
         "last 2 major version, not IE 11, not OperaMini all, not dead"
     ],
     "dependencies": {
-        "jquery": "^3.6.0"
+        "bootstrap": "^3.3.7",
+        "bxslider": "^4.2.13",
+        "fancybox": "^3.0.0",
+        "jquery": "^3.6.0",
+        "svg4everybody": "^2.1.9",
+        "jquery-nice-select": "^1.1.0",
+        "jquery.maskedinput": "^1.4.1",
+        "slick-carousel": "^1.8.1",
+        "owl.carousel": "^2.3.3"
     }
 }

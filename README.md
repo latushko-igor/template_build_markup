@@ -9,7 +9,7 @@
 
 * _git_
 * _nodejs_
-* _yarn_ `sudo npm install --global yarn`
+* _yarn_
 
 ## INSTALL
 
@@ -36,13 +36,13 @@
 * responsive youtube video (`./src/main.scss`)
 * yandex map integrated (`./src/main.js`, `./src/page.pug`)
 * mixin (`./src/_particles`)
-    - pug (`_mixins.pug`)
-        + index page - pages links hub (for multipage markup projects)
-        + inline images - svg, png
-        + sprites - svg, png / png retina
-    - scss (`_mixins.scss`)
-        + easing linear gradients
-        + sprites
+	- pug (`_mixins.pug`)
+		+ index page - pages links hub (for multipage markup projects)
+		+ inline images - svg, png
+		+ sprites - svg, png / png retina
+	- scss (`_mixins.scss`)
+		+ easing linear gradients
+		+ sprites
 * necessary libraries & plugins (`./gulp/settings.js`, `./src/page.pug` - path to `*.min` files)
 * deploying in github pages
 
@@ -50,9 +50,15 @@
 
 ***settings***
 
-* `./package.json` - name
-* `./gulp/settings.js` - projectName, libraries & plugins paths, smartgrid settings
-* `./src/particles/_data.json` - data for index page & project pages
+* `./package.json`
+	- _github_ (`name`, `description`, `repository`)
+* `./gulp/settings.js`
+	- `deploy.js` (`projectName`, `projectType`)
+	- libraries & plugins paths
+	- smartgrid settings
+* `./src/particles/_data.json`
+	- `index.pug` (`language`, `projectName`, `index`)
+	- `_layout.pug` (`language`, `lorem`)
 
 ***pages*** `./src`
 
@@ -108,18 +114,18 @@
 ***project dependencies***
 
 * install `sudo npm install --save <...>`
-    - `svg4everybody` - external SVG spritemaps support (all browsers SVG support)
-    - `jquery` - javascript library
-    - `jquery-form` - forms
-    - `jquery-nice-select` - customizable dropdowns
-    - `jquery.maskedinput` - masked input
-    - `jquery-validation` - form validation
-    - `fancybox` - popup
-    - slider / carousel
-        + `slick-carousel`
-        + `owl.carousel`
-        + `bxslider` - responsive slider
-    - `bootstrap` - grid
+	- `svg4everybody` - external SVG spritemaps support (all browsers SVG support)
+	- `jquery` - javascript library
+	- `jquery-form` - forms
+	- `jquery-nice-select` - customizable dropdowns
+	- `jquery.maskedinput` - masked input
+	- `jquery-validation` - form validation
+	- `fancybox` - popup
+	- slider / carousel
+		+ `slick-carousel`
+		+ `owl.carousel`
+		+ `bxslider` - responsive slider
+	- `bootstrap` - grid
 
 ***inline png/svg image***
 
@@ -133,9 +139,9 @@
 ~~~pug
 <!-- pug -->
 nav(block='navigation')
-    ul
-        li(elem='item', mod='active')
-            a(href='#', title='Page') Page
+	ul
+		li(elem='item', mod='active')
+			a(href='#', title='Page') Page
 ~~~
 
 ***svg sprite***
@@ -155,8 +161,8 @@ nav(block='navigation')
 ~~~scss
 // scss
 .sprite-{filename} {
-    @include sprite(${filename}) // for simple sprite
-    @include retina-sprite(${filename}-group) // for simple & retina sprite
+	@include sprite(${filename}) // for simple sprite
+	@include retina-sprite(${filename}-group) // for simple & retina sprite
 }
 ~~~
 
@@ -165,7 +171,7 @@ nav(block='navigation')
 ~~~scss
 // scss
 .container {
-    @include scrimGradient($startColor, $direction); // rgba(0,0,0,1), 'to bottom'
+	@include scrimGradient($startColor, $direction); // rgba(0,0,0,1), 'to bottom'
 }
 ~~~
 
@@ -181,7 +187,7 @@ div(id='map')
 ~~~pug
 <!-- pug -->
 div(block='embed-container')
-    iframe(src='https://www.youtube.com/embed/HVrLvSeSNME', frameborder='0', allowfullscreen)
+	iframe(src='https://www.youtube.com/embed/HVrLvSeSNME', frameborder='0', allowfullscreen)
 ~~~
 
 ***smart-grid***
@@ -191,25 +197,25 @@ Default: `disabled` (in `styles.scss`)
 ~~~pug
 <!-- pug -->
 .wrapper
-    .row
-        .col
-        .col
+	.row
+		.col
+		.col
 ~~~
 
 ~~~scss
 // scss
 .wrapper {
-    @include wrapper();
+	@include wrapper();
 
-    .row {
-        @include row-flex();
-        @include md(justify-content, space-between);
+	.row {
+		@include row-flex();
+		@include md(justify-content, space-between);
 
-        .col {
-            @include col();
-            @include size(n);
-        }
-    }
+		.col {
+			@include col();
+			@include size(n);
+		}
+	}
 }
 ~~~
 

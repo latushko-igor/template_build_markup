@@ -2,6 +2,39 @@
 // STYLE GUIDE
 // ==========================================================================
 
+// Breakpoints
+// ==========================================================================
+
+$screen--sm:					320px;
+$screen--md:					768px;
+$screen--lg:					1024px;
+$screen--xl:					1280px;
+
+// Typography
+// ==========================================================================
+
+$font_family--black:			'PFBeauSansPro-Black', Arial, sans-serif;
+$font_family--extrabold:		'PFBeauSansPro-ExtraBold', Arial, sans-serif;
+$font_family--bold:				'PFBeauSansPro-Bold', Arial, sans-serif;
+$font_family--semibold:			'PFBeauSansPro-SemiBold', Arial, sans-serif;
+$font_family--medium:			'PFBeauSansPro-Medium', Arial, sans-serif;
+$font_family--regular:			'PFBeauSansPro-Regular', Arial, sans-serif;
+$font_family--light:			'PFBeauSansPro-Light', Arial, sans-serif;
+
+$font_size--xs:					12px;
+$font_size--sm:					14px;
+$font_size--md:					16px;
+$font_size--lg:					18px;
+$font_size--xl:					20px;
+$font_size--xxl:				30px;
+
+$line_height--xs:				1.5;
+$line_height--sm:				1.7;
+$line_height--md:				1.9;
+$line_height--lg:				2.1;
+$line_height--xl:				2.3;
+$line_height--xxl:				2.5;
+
 // Palette
 // ==========================================================================
 
@@ -32,31 +65,6 @@ $color_highlight--success:		#5CB85C;
 $color_highlight--danger:		#D9534F;
 $color_highlight--warning:		#D8AE1C;
 
-// Typography
-// ==========================================================================
-
-$font_family--black:			'PFBeauSansPro-Black', Arial, sans-serif;
-$font_family--extrabold:		'PFBeauSansPro-ExtraBold', Arial, sans-serif;
-$font_family--bold:				'PFBeauSansPro-Bold', Arial, sans-serif;
-$font_family--semibold:			'PFBeauSansPro-SemiBold', Arial, sans-serif;
-$font_family--medium:			'PFBeauSansPro-Medium', Arial, sans-serif;
-$font_family--regular:			'PFBeauSansPro-Regular', Arial, sans-serif;
-$font_family--light:			'PFBeauSansPro-Light', Arial, sans-serif;
-
-$font_size--xs:					12px;
-$font_size--sm:					14px;
-$font_size--md:					16px;
-$font_size--lg:					18px;
-$font_size--xl:					20px;
-$font_size--xxl:				30px;
-
-$line_height--xs:				1.5;
-$line_height--sm:				1.7;
-$line_height--md:				1.9;
-$line_height--lg:				2.1;
-$line_height--xl:				2.3;
-$line_height--xxl:				2.5;
-
 // White Space
 // ==========================================================================
 
@@ -66,11 +74,3 @@ $space--md:						15px;
 $space--lg:						20px;
 $space--xl:						30px;
 $space--xxl:					40px;
-
-// Breakpoints
-// ==========================================================================
-
-$screen--sm:					320px;
-$screen--md:					768px;
-$screen--lg:					1024px;
-$screen--xl:					1280px;
